@@ -8,7 +8,11 @@
     <!--CSS-->
     <link rel="stylesheet" href="/assets/style.css">
     <!--FontAwesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  
+   
+    
+
     <!--Docment title-->
     <title>Ohmyfood - Accueil</title>
 </head>
@@ -17,7 +21,7 @@
     <!--loader-->
 
     <header class="header">
-        <div class=" header_logo">
+        <div class=" header__logo">
         <img src="/assets/images/logo/ohmyfood.png" alt="logo du site">   
         </div>
     </header>
@@ -27,8 +31,7 @@
     <section class="speech">
     <div class="location">
         <p>
-        <span class="location_icon">
-            <i class="fa-solid fa-location-dot"></i></span>
+        <i class="location_icon fa-solid fa-location-dot"></i>
             <h2>Paris,Belleville</h2>
         </p>
         </div>  
@@ -44,27 +47,27 @@
    <!-- Fonctionnement-->
    <section class="working">
     <h2 class="working_title">Fonctionnement</h2>
-    <ul class="bloc">
-        <li class="workin_card">
+    <ul class=" working_bloc">
+        <li class="working_card">
             <div class="working_card_step">
                 1
             </div>
-            <i class="working_card_icon fa-solid fa-mobile-screen-button"></i>
-            <span class="working_card_title"> Choisissez un restaurants</span>
+            <i class="working_icon fa-solid fa-mobile-screen-button"></i>
+            <span class="working_choice"> Choisissez un restaurants</span>
         </li>
-        <li class="workin_card">
+        <li class="working_card">
             <div class="working_card_step">
                 2
             </div>
-            <i class="working_card_icon fa-solid fa-list-ul"></i>
-            <span class="working_card_title">Composez votre menu</span>
+            <i class="working_icon fa-solid fa-list-ul"></i>
+            <span class="working_choice">Composez votre menu</span>
         </li>
-        <li class="workin_card">
+        <li class="working_card">
             <div class="working_card_step">
                 3
             </div>
-            <i class="working_card_icon fa-solid fa-store"></i>
-            <span class="working_card_title"> Dégustez au restaurant</span>
+            <i class="working_icon fa-solid fa-store"></i>
+            <span class="working_choice"> Dégustez au restaurant</span>
         </li>
     </ul>
 
@@ -72,13 +75,70 @@
 
    <!--Restaurants-->
 <section class=" restaurants">
-    
+   <h2  class=" restaurant_title"> Restaurants</h2>
+   <article class="card">
+    <header class="card_heading"> 
+        <a href="/menu-la palette du gourmet.html">
+         
+   <img class="card_photo" src="./assets/images/restaurants/la palette du gout.jpg" alt="photo du plat"></a>
+   <span class="card_grab"> Nouveau</span>
+</header>
+   <footer class="card_footer">
+
+    <h3 class="card_name">La palette du gout</h3> 
+<i class="card_icon fa-thin fa-heart"></i> <!-- input revoir le detail avec l'icone-->
+    <h3 class="card_place"> Ménilmontant</h3>
+   </footer>
+   </article>
+
+   <article class="card">
+    <header class="card_heading"> 
+        <a href="./menu-la note enchantée.html">
+         
+   <img src="./assets/images/restaurants/la note enchantée.jpg" alt="photo du plat"></a>
+   <span class="card_grab"> Nouveau</span>
+</header>
+   <footer class="card_footer">
+
+    <h3 class="card_name">La note enchantée</h3> 
+<i class="card_icon fa-thin fa-heart"></i> <!-- input revoir le detail avec l'icone-->
+    <h3 class="card_place">Charonne</h3>
+   </footer>
+   </article>
+   <article class="card">
+    <header class="card_heading"> 
+        <a href="./menu- a la francaise.html">
+         
+   <img src="./assets/images/restaurants/a la francaise.jpg" alt="photo du plat"><a>
+</header>
+   <footer class="card_footer">
+
+    <h3 class="card_name">  A la française</h3> 
+<i class="card_icon fa-thin fa-heart"></i> <!-- input revoir le detail avec l'icone-->
+    <h3 class="card_place"> Cité Rouge </h3>
+   </footer>
+   </article>
+   <article class="card">
+    <header class="card_heading"> 
+        <a href="./menu-le delice des sens.html">
+         
+   <img src="./assets/images/restaurants/le delice des sens.jpg" alt="photo du plat"></a>
+</header>
+   <footer class="card_footer">
+
+    <h3 class="card_name">Le délice des sens</h3> 
+<i class="card_icon fa-thin fa-heart"></i> <!-- input revoir le detail avec l'icone-->
+    <h3 class="card_place">Folie-Méricourt</h3>
+   </footer>
+   </article>
+
 </section>
 
 
     </main>
 
     <footer>
+    
 
     </footer>
 
