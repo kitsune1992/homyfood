@@ -1,0 +1,44 @@
+/*bases : typographies*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+*{
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+body {
+    margin: 0%;
+}
+main {
+    font-family: 'Roboto', sans-serif;
+    
+  
+}
+
+h1,.h2,.h3,.h4,.h5,.logo {
+    font-family:'shrikhand','cursive';
+}
+
+
+button {
+    font-family: 'Roboto', sans-serif;
+   
+}
+/*COMPONENTS*/
+/*button*/
+/*grab*/
+/*heart*/
+
+/*LAYOUT*/
+/*header*/
+
+/*main*/
+/*footer*/
+
+/*PAGES*/
+/*acceuil*card/
+/*menu*card/
+
+/*UTILS*/
+/*fonctions*/
+/*mixin*/
+/*variables*/
