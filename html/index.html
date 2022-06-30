@@ -7,10 +7,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/scss/style.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Shrikhand&amp;display=swap" rel="stylesheet">
+    
 
     <!--Docment title-->
     <title>Ohmyfood - Accueil</title>
@@ -18,28 +20,40 @@
 
 <body>
     <!--loader-->
+    <div class=" loader">
+        <div class=""></div>
+    </div>
 
     <!--Header-->
     <header class="header">
-        <div class=" header__logo">
-            <img src="/assets/images/logo/ohmyfood.png" alt="logo black">
+        <div class="home">
+            <img class="home__logo" src="/assets/images/logo/ohmyfood@2x.svg" alt="logo ho my food">
         </div>
+     
     </header>
 
-    <main class=" main">
-        <!--Localisation-->
+    <main>
+
+<!--search-->
+    <section class="location">
+        <div class="location__icon">
+        <i class=" fa-solid fa-location-dot"></i>
+        </div>
+   
+<form>
+    <input class="input" type=" text" placeholder=" Paris, Belleville">
+
+</form>
+</section>
+
+
         <section class="speech">
-            <div class="location">
 
-                <i class="location__icon fa-solid fa-location-dot"></i>
-                <span class="location__place"> Paris,Belleville
-                </span>
-
-            </div>
             <div class="intro">
                 <h1 class="intro__title"> Réservez le menu qui vous convient</h1>
-                <h3 class="intro__subtitle"> Découvrez des restaurants d'exception,sélectionnés par nos soins</h3>
-                <button class="btn" aria-pressed="false" title="snackmap">
+                <p class="intro__subtitle"> Découvrez des restaurants d'exception,sélectionnés par nos soins.
+                </p>
+                <button class="buttons" aria-pressed="false" title="snackmap">
                     Explorer nos restaurants
                 </button>
             </div>
@@ -47,7 +61,7 @@
 
         <!-- Fonctionnement-->
         <section class="working">
-            <h2 class="working_title">Fonctionnement</h2>
+            <h2 class="working__title">Fonctionnement</h2>
             <ul class=" working__bloc">
                 <li class="working__card">
                     <div class="working__card__step">
@@ -56,7 +70,7 @@
                     <i class="working__icon fa-solid fa-mobile-screen-button"></i>
                     <span class="working__choice"> Choisissez un restaurants</span>
                 </li>
-                <li class="working_card">
+                <li class="working__card">
                     <div class="working__card__step">
                         2
                     </div>
@@ -75,28 +89,31 @@
         </section>
 
         <!--Restaurants-->
-        <section class=" restaurants">
+        <section id=" restaurants">
             <h2 class=" restaurant__title"> Restaurants</h2>
             <article class="card">
                 <header class="card__heading">
-                    <a href="menu la palette du gout.html">
+                    <a class="restaurants_link" href="/html/menu la palette du gout.html">
 
-                        <img class="card__photo" src="./assets/images/restaurants/la palette du gout.jpg"
-                            alt="photo du plat">
+                        <img class="card__photo" src="/assets/images/restaurants/la palette du gout.jpg"alt="photo du plat">
                         <span class="card__grab"> Nouveau</span>
                 </header>
                 <footer class="card__footer">
 
                     <h3 class="card__name">La palette du gout</h3>
-                    <i class="card__icon far fa-heart"></i>
                     <h3 class="card__place"> Ménilmontant</h3>
+                    <div class="card__heart">
+                        <span class="default-icon"><i class="far fa-heart"></i></span>
+                        <span class="selected-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
                 </footer>
                 </a>
             </article>
 
             <article class="card">
                 <header class="card__heading">
-                    <a href="/html/menu la note enchantée.html">
+                    <a class="restaurants__link" href="/html/menu la note enchantée.html">
 
                         <img src="/assets/images/restaurants/la note enchantée.jpg" alt="photo du plat">
                         <span class="card__grab"> Nouveau</span>
@@ -104,36 +121,49 @@
                 <footer class="card__footer">
 
                     <h3 class="card__name">La note enchantée</h3>
-                    <i class="card__icon far fa-heart"></i>
+
                     <h3 class="card__place">Charonne</h3>
+                    <div class=" card__heart">
+                        <span class="default-icon"><i class="far fa-heart"></i></span>
+                        <span class="selected-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
                 </footer>
                 </a>
             </article>
             <article class="card">
                 <header class="card__heading">
-                    <a href="/html/menu la note enchantée.html">
+                    <a class="restaurants__link" href="/html/menu a la francaise.html">
 
                         <img src="/assets/images/restaurants/a la francaise.jpg" alt="photo du plat">
                 </header>
                 <footer class="card__footer">
 
                     <h3 class="card__name"> A la française</h3>
-                    <i class="card__icon far fa-heart"></i>
                     <h3 class="card__place"> Cité Rouge </h3>
+                    <div class=" card__heart">
+                        <span class="default-icon"><i class="far fa-heart"></i></span>
+                        <span class="selected-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
                 </footer>
                 </a>
             </article>
             <article class="card">
                 <header class="card__heading">
-                    <a href="/html/menu le delice des sens.html">
+                    <a class="restaurants__link" href="/html/menu le delice des sens.html">
 
                         <img src="/assets/images/restaurants/le delice des sens.jpg" alt="photo du plat">
                 </header>
                 <footer class="card__footer">
 
                     <h3 class="card__name">Le délice des sens</h3>
-                    <i class="card__icon far fa-heart"></i>
                     <h3 class="card__place">Folie-Méricourt</h3>
+                    <div class=" card__heart">
+                        <span class="default-icon"><i class="far fa-heart"></i></span>
+                        <span class="selected-icon"><i class="far fa-heart"></i></span>
+
+                    </div>
                 </footer>
                 </a>
             </article>
@@ -146,7 +176,7 @@
     <footer class=" footer">
         <!--logo-->
         <div class=" footer__logo">
-            <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo white">
+            <img src="/assets/images/logo/ohmyfood@2x.svg" alt="logo white">
         </div>
         <!--Liens-->
         <ul class="list_link">

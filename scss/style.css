@@ -1,0 +1,75 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+.header .logo {
+  justify-content: center;
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding: 3%;
+  background: #eaeaea;
+}
+.location .fa-location-dot {
+  font-size: large;
+}
+.location .input {
+  border: none;
+  width: 70%;
+  text-align: center;
+  background: #eaeaea;
+  font-weight: 800;
+  color: black;
+}
+
+.speech {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.speech .intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 9%;
+  padding-bottom: 9%;
+}
+.speech .title {
+  font-size: 23px;
+  font-weight: 500;
+}
+.speech .subtitle {
+  font-style: normal;
+}/*# sourceMappingURL=style.css.map */
