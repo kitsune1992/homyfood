@@ -88,7 +88,7 @@ a {
     }
 
 
-    .title {
+    .ititle {
         font-size: 23px;
         font-weight: 500;
       
@@ -96,10 +96,34 @@ a {
 
     }
 
-    .subtitle {
+    .isubtitle {
       
         font-style: normal;
 
 
     }
 }
+
+.working{
+ 
+    padding-bottom: 0%;
+ 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.wtitle{
+    padding-bottom: 6%;
+}
+.wcard{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+}
+.wicon{
+ margin: 0%;
+}
+}
+

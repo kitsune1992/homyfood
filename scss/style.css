@@ -66,10 +66,30 @@ a {
   padding-top: 9%;
   padding-bottom: 9%;
 }
-.speech .title {
+.speech .ititle {
   font-size: 23px;
   font-weight: 500;
 }
-.speech .subtitle {
+.speech .isubtitle {
   font-style: normal;
+}
+
+.working {
+  padding-bottom: 0%;
+}
+.working .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.working .wtitle {
+  padding-bottom: 6%;
+}
+.working .wcard {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10%;
+}
+.working .wicon {
+  margin: 0%;
 }/*# sourceMappingURL=style.css.map */
