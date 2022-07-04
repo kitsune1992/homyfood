@@ -1,27 +1,22 @@
-body {
-  font-family: "Roboto", sans-serif;
+/*bases*/
+@font-face {
+  font-family: "Roboto";
+  src: url("Polices/Roboto/Roboto-Regular-webfont.ttf");
 }
-
-* {
-  box-sizing: inherit;
-  margin: 0px;
-  padding: 0px;
+@font-face {
+  font-family: "shrikhand";
+  src: url("Polices/shrikhand/Shrikhand-Regular.ttf");
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
-}
-
+h1,
+h2,
+h3,
+p,
 a {
-  text-decoration: none;
-  color: black;
+  font-family: "Roboto";
 }
 
+/*Reset*/
+/*layout header*/
 .header {
   display: flex;
   flex-direction: column;
@@ -29,10 +24,12 @@ a {
   padding-top: 5%;
   padding-bottom: 2%;
 }
-.header .logo {
+.header__logo {
   justify-content: center;
+  border-style: none;
 }
 
+/*Layout  location*/
 .location {
   width: 100%;
   display: flex;
@@ -41,55 +38,111 @@ a {
   align-items: baseline;
   padding: 3%;
   background: #eaeaea;
+  box-shadow: 0px 3px 3px -1px #c4c3c0 inset;
 }
-.location .fa-location-dot {
+.location__icon {
   font-size: large;
+  color: rgba(51, 51, 51, 0.8392156863);
 }
 .location .input {
   border: none;
-  width: 70%;
+  width: 100%;
   text-align: center;
   background: #eaeaea;
   font-weight: 800;
   color: black;
 }
 
+/*layout section speech*/
 .speech {
   background-color: #f6f6f6;
   text-align: center;
 }
-.speech .intro {
+.speech__content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 9%;
-  padding-bottom: 9%;
+  padding-top: 3%;
+  padding-bottom: 20%;
 }
-.speech .ititle {
+.speech__title {
   font-size: 23px;
   font-weight: 500;
+  padding: 5%;
+  margin: 1% 0% 0% 3%;
 }
-.speech .isubtitle {
+.speech__subtitle {
   font-style: normal;
+  margin: 0% 0% 8% 3%;
 }
 
-.working {
-  padding-bottom: 0%;
+/*BTN*/
+.btn {
+  min-width: fit-content;
+  max-width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #9356DC;
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0px #c4c3c0;
+  cursor: pointer;
 }
-.working .container {
+
+/*layout section working*/
+.working {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.working .wtitle {
-  padding-bottom: 6%;
+.working__title {
+  padding: 10% 0% 7% 9%;
 }
-.working .wcard {
+.working__step__content {
   display: flex;
   flex-direction: row;
-  padding-bottom: 10%;
+  align-items: baseline;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 4% 0% 4% 0%;
+  background-color: #f6f6f6;
+  border-radius: 18px;
+  box-shadow: 1px 2px 7px 1px #c4c3c0;
 }
-.working .wicon {
-  margin: 0%;
+.working__step__num {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #9356DC;
+  color: white;
+  width: 8%;
+  height: 3%;
+  margin-left: -3%;
+  margin-right: 6%;
+  padding: 1%;
+  border-radius: 50%;
+}
+.working__step__icon {
+  margin-right: 6%;
+  color: #959595;
+}
+
+/*
+    &__title {}
+
+    &__num {}
+
+
+    &__icon {}
+
+    &__choice{
+}
+    }
+    */
+/*Layout Footer*/
+.footer {
+  background-color: #959595;
 }/*# sourceMappingURL=style.css.map */

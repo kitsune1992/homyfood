@@ -1,11 +1,206 @@
+@import"utils/variables";
 
-@import"scss/Utils/variables";
-@import"scss/Utils/mixins";
-@import"scss/Utils/animations";
-@import"scss/Base/bases";
-@import"scss/Base/reset";
-@import"scss/Layout/header";
-@import"scss/Layout/main";
-@import"scss/Layout/footer";
+/*bases*/
+@font-face {
+    font-family: "Roboto";
+    src: url("Polices/Roboto/Roboto-Regular-webfont.ttf");
+}
+
+@font-face {
+    font-family: "shrikhand";
+    src: url("Polices/shrikhand/Shrikhand-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: "Roboto";
+}
+
+/*Reset*/
 
 
+
+/*layout header*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    
+
+
+
+
+
+    &__logo {
+        justify-content: center;
+        border-style: none;
+
+
+    }
+
+
+
+}
+
+/*Layout  location*/
+
+
+
+.location {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    padding: 3%;
+    background: $lightgray-color;
+    box-shadow: 0px 3px 3px -1px $shadow-color inset;
+
+    
+   
+
+
+    &__icon {
+        font-size: large;
+        color:#333333d6;
+    }
+
+ .input {
+        border: none;
+        width: 100%;
+        text-align: center;
+    
+        background: $lightgray-color;
+        font-weight: 800;
+        color: black;
+    }
+}
+
+/*layout section speech*/
+
+.speech {
+    background-color: $whitegray-color;
+    text-align: center;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 3%;
+        padding-bottom: 20%;
+
+    }
+
+
+    &__title {
+        font-size: 23px;
+        font-weight: 500;
+        padding: 5%;
+        margin: 1% 0% 0% 3%;
+        
+           }
+
+
+
+
+    
+
+    &__subtitle {
+
+        font-style: normal;
+        margin:0% 0% 8% 3%;
+    }
+  
+
+}
+
+
+/*BTN*/
+.btn{
+  min-width: fit-content;
+    max-width:fit-content ;
+    font-size:20px ;
+    font-weight: 500;
+    color: white;
+    background-color: $primary-color;
+    background-image: linear-gradient(to top left,$primary-color,$secondary-color);
+    border: 0;
+    border-radius:20px ;
+    box-shadow: 0px 0px 0px 0px $shadow-color ;
+    cursor: pointer;
+}
+
+
+/*layout section working*/
+
+
+.working {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        padding: 10% 0% 7% 9%
+    }
+
+
+    &__step {
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            margin-bottom: 10%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 4% 0% 4% 0%;
+            background-color: $whitegray-color;
+            border-radius: 18px;
+            box-shadow: 1px 2px 7px 1px $shadow-color;
+        }
+
+        &__num {
+          
+            display: flex;
+            justify-content: center;
+            position: relative;
+            background-color: $primary-color ;
+            color: white;
+            width:8% ;
+            height: 3%;
+            margin-left:-3% ;
+            margin-right: 6%;
+            padding: 1%;
+            border-radius: 50%;
+      
+
+        }
+        &__icon{
+            margin-right:6% ;
+            color: $darkgray-color;
+        }
+
+
+    }
+}
+    /*
+    &__title {}
+
+    &__num {}
+
+
+    &__icon {}
+
+    &__choice{
+}
+    }
+    */
+
+    /*Layout Footer*/
+    .footer {
+        background-color: $darkgray-color ;
+    }
