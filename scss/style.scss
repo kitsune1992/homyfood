@@ -6,19 +6,23 @@
     src: url("Polices/Roboto/Roboto-Regular-webfont.ttf");
 }
 
-@font-face {
-    font-family: "shrikhand";
-    src: url("Polices/shrikhand/Shrikhand-Regular.ttf");
-}
+
 
 h1,
 h2,
 h3,
 p,
-a {
+a,
+span {
     font-family: "Roboto";
 }
 
+a,
+ul
+{
+    text-decoration: none;
+
+}
 /*Reset*/
 
 
@@ -30,7 +34,7 @@ a {
     align-items: center;
     padding-top: 5%;
     padding-bottom: 2%;
-    
+
 
 
 
@@ -61,20 +65,20 @@ a {
     background: $lightgray-color;
     box-shadow: 0px 3px 3px -1px $shadow-color inset;
 
-    
-   
+
+
 
 
     &__icon {
         font-size: large;
-        color:#333333d6;
+        color: #333333d6;
     }
 
- .input {
+    .input {
         border: none;
         width: 100%;
         text-align: center;
-    
+
         background: $lightgray-color;
         font-weight: 800;
         color: black;
@@ -100,42 +104,51 @@ a {
 
     &__title {
         font-size: 23px;
-        font-weight: 500;
+        font-weight: 700;
         padding: 5%;
         margin: 1% 0% 0% 3%;
-        
-           }
+
+    }
 
 
 
 
-    
+
 
     &__subtitle {
 
         font-style: normal;
-        margin:0% 0% 8% 3%;
+        margin: 0% 0% 8% 3%;
     }
-  
+
 
 }
 
 
 /*BTN*/
-.btn{
-  min-width: fit-content;
-    max-width:fit-content ;
-    font-size:20px ;
+.btn {
+
+    font-size: 20px;
     font-weight: 500;
     color: white;
     background-color: $primary-color;
-    background-image: linear-gradient(to top left,$primary-color,$secondary-color);
+    background-image: linear-gradient(to top left, $primary-color, $secondary-color);
     border: 0;
-    border-radius:20px ;
+    border-radius: 20px;
     box-shadow: 0px 0px 0px 0px $shadow-color ;
     cursor: pointer;
 }
 
+/*section title*/
+.section__title {
+    margin-bottom: 7%;
+    margin-top: 10%;
+    padding-left: 8%;
+    font-size:23px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
 
 /*layout section working*/
 
@@ -143,10 +156,7 @@ a {
 .working {
     display: flex;
     flex-direction: column;
-
-    &__title {
-        padding: 10% 0% 7% 9%
-    }
+    margin-bottom: 10%;
 
 
     &__step {
@@ -157,50 +167,58 @@ a {
             margin-bottom: 10%;
             margin-left: 10%;
             margin-right: 10%;
-            padding: 4% 0% 4% 0%;
+            padding: 5% 0% 5% 0%;
             background-color: $whitegray-color;
             border-radius: 18px;
             box-shadow: 1px 2px 7px 1px $shadow-color;
         }
 
         &__num {
-          
+
             display: flex;
             justify-content: center;
             position: relative;
             background-color: $primary-color ;
             color: white;
-            width:8% ;
+            width: 8%;
             height: 3%;
-            margin-left:-3% ;
+            margin-left: -3%;
             margin-right: 6%;
             padding: 1%;
             border-radius: 50%;
-      
+
 
         }
-        &__icon{
-            margin-right:6% ;
+
+        &__icon {
+            margin-right: 6%;
             color: $darkgray-color;
         }
-
-
     }
 }
-    /*
-    &__title {}
+.restaurant{
 
-    &__num {}
+  &__card{
 
+    height: 60%;
+    width: 80%;
+    border-radius:20px 20px 20px 20px ;
+    box-shadow: 0px 0px 0px 0px;
+    margin-bottom: 10%;
+    padding-left: 10%;
+    overflow: hidden;
 
-    &__icon {}
+  }
 
-    &__choice{
+  &__photo{
+   
 }
-    }
-    */
+}
 
-    /*Layout Footer*/
-    .footer {
-        background-color: $darkgray-color ;
-    }
+
+
+
+/*Layout Footer*/
+.footer {
+    background-color: $darkgray-color ;
+}

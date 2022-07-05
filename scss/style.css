@@ -3,16 +3,18 @@
   font-family: "Roboto";
   src: url("Polices/Roboto/Roboto-Regular-webfont.ttf");
 }
-@font-face {
-  font-family: "shrikhand";
-  src: url("Polices/shrikhand/Shrikhand-Regular.ttf");
-}
 h1,
 h2,
 h3,
 p,
-a {
+a,
+span {
   font-family: "Roboto";
+}
+
+a,
+ul {
+  text-decoration: none;
 }
 
 /*Reset*/
@@ -68,7 +70,7 @@ a {
 }
 .speech__title {
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 5%;
   margin: 1% 0% 0% 3%;
 }
@@ -79,8 +81,6 @@ a {
 
 /*BTN*/
 .btn {
-  min-width: fit-content;
-  max-width: fit-content;
   font-size: 20px;
   font-weight: 500;
   color: white;
@@ -92,13 +92,21 @@ a {
   cursor: pointer;
 }
 
+/*section title*/
+.section__title {
+  margin-bottom: 7%;
+  margin-top: 10%;
+  padding-left: 8%;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 /*layout section working*/
 .working {
   display: flex;
   flex-direction: column;
-}
-.working__title {
-  padding: 10% 0% 7% 9%;
+  margin-bottom: 10%;
 }
 .working__step__content {
   display: flex;
@@ -107,7 +115,7 @@ a {
   margin-bottom: 10%;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 4% 0% 4% 0%;
+  padding: 5% 0% 5% 0%;
   background-color: #f6f6f6;
   border-radius: 18px;
   box-shadow: 1px 2px 7px 1px #c4c3c0;
@@ -130,18 +138,15 @@ a {
   color: #959595;
 }
 
-/*
-    &__title {}
-
-    &__num {}
-
-
-    &__icon {}
-
-    &__choice{
+.restaurant__card {
+  height: 60%;
+  width: 80%;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 0px 0px;
+  margin-bottom: 10%;
+  padding-left: 10%;
+  overflow: hidden;
 }
-    }
-    */
 /*Layout Footer*/
 .footer {
   background-color: #959595;
