@@ -33,8 +33,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4%;
-    padding-bottom: 2px;
+    padding: 6%;
+    padding-bottom: 10px;
 
 
 
@@ -52,6 +52,7 @@ ul {
 
 }
 
+
 /*Layout  location*/
 
 
@@ -62,7 +63,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-    padding: 3%;
+    padding: 5%;
     background: $lightgray-color;
     box-shadow: 0px 3px 3px -1px $shadow-color inset;
 
@@ -73,7 +74,7 @@ ul {
     &__icon {
         display: inline-block;
         font-size: large;
-        color: #333333d6;
+        color:#353535;
         padding-left: 11%;
     }
 
@@ -105,6 +106,7 @@ ul {
 }
 
 
+
 /*layout section speech*/
 
 .speech {
@@ -113,8 +115,7 @@ ul {
 
     &__content {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         padding-top: 3%;
         padding-bottom: 20%;
@@ -123,7 +124,7 @@ ul {
 
 
     &__title {
-        font-size: 23px;
+        font-size: 29px;
         font-weight: 700;
         padding: 5%;
         margin: 1% 0% 0% 3%;
@@ -137,26 +138,40 @@ ul {
 
     &__subtitle {
 
-        font-style: normal;
-        margin: 0% 0% 8% 3%;
+        font-style:normal;
+        font-size:20px;
+        margin: 0% 0% 12% 0%;
     }
 
 
 }
 
 
-/*BTN*/
-.btn {
 
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
+
+/*BTN*/
+.button {
+    display: flex;
+    align-items: center;
     background-color: $primary-color;
     background-image: linear-gradient(to top left, $primary-color, $secondary-color);
     border: 0;
-    border-radius: 20px;
-    box-shadow: 0px 0px 0px 0px $shadow-color ;
-    cursor: pointer;
+    border-radius: 30px;
+    width: 265px;
+    height: 60px;
+    box-shadow: 0px 6px 10px 0px $shadow-color ;
+  
+    margin: 0% 0%  0% 15% ;
+   
+
+    &__text {
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 9%;
+     
+    
+}
 }
 
 /*section title*/
@@ -229,26 +244,76 @@ ul {
         box-shadow: 0px 1px 8px 1px $shadow-color;
         margin-bottom: 10%;
         margin-left: 7%;
-       
+
         overflow: hidden;
-        background-color:white;
+        background-color: white;
         position: relative;
 
 
         &__img {
             width: 90vw;
-      height: 40vw;
+            height: 40vw;
             object-fit: cover;
             object-position: 50% 60%;
             border-radius: 20px 20px 0px 0px;
 
         }
-        &__content{
+
+        &__content {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    padding-left: 4%;
+    padding-top: 2%;
+        }
+
+         
+        &__name{
+        font-weight: bold;
+
+    }
+
+   
+
+
+         
+         &__heart{
+            padding-top: 3%;
+                padding-right: 4%;
+
+
+                &:hover .fa-heart-animated{
+                    cursor: pointer;
+                   
+                   
+                }       
+    }
+    
+        
+    
+        
+          
+        
+    
+
+        &__grab{
+         
+            background-color:$tertiary-color ;
+       position: absolute;
+       top: 10px;
+       right: 8px;
+       border-radius: 2px;
+       padding: 2%;
+       margin: 2%;
+       color:$deepsea-color ;
+       font-weight: 600;
+            
         }
     }
-}
+    }
+    
+
 
 
 

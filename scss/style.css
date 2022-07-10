@@ -23,8 +23,8 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4%;
-  padding-bottom: 2px;
+  padding: 6%;
+  padding-bottom: 10px;
 }
 .header__logo {
   justify-content: center;
@@ -38,14 +38,14 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
-  padding: 3%;
+  padding: 5%;
   background: #eaeaea;
   box-shadow: 0px 3px 3px -1px #c4c3c0 inset;
 }
 .location__icon {
   display: inline-block;
   font-size: large;
-  color: rgba(51, 51, 51, 0.8392156863);
+  color: #353535;
   padding-left: 11%;
 }
 .location .form {
@@ -72,34 +72,41 @@ ul {
 }
 .speech__content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   padding-top: 3%;
   padding-bottom: 20%;
 }
 .speech__title {
-  font-size: 23px;
+  font-size: 29px;
   font-weight: 700;
   padding: 5%;
   margin: 1% 0% 0% 3%;
 }
 .speech__subtitle {
   font-style: normal;
-  margin: 0% 0% 8% 3%;
+  font-size: 20px;
+  margin: 0% 0% 12% 0%;
 }
 
 /*BTN*/
-.btn {
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
+.button {
+  display: flex;
+  align-items: center;
   background-color: #9356DC;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   border: 0;
-  border-radius: 20px;
-  box-shadow: 0px 0px 0px 0px #c4c3c0;
-  cursor: pointer;
+  border-radius: 30px;
+  width: 265px;
+  height: 60px;
+  box-shadow: 0px 6px 10px 0px #c4c3c0;
+  margin: 0% 0% 0% 15%;
+}
+.button__text {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 9%;
 }
 
 /*section title*/
@@ -145,7 +152,7 @@ ul {
 }
 .working__step__icon {
   margin-right: 6%;
-  color: #959595;
+  color: #7e7e7e;
 }
 
 .restaurant {
@@ -173,10 +180,35 @@ ul {
 }
 .restaurant__card__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+.restaurant__card__name {
+  font-weight: bold;
+}
+.restaurant__card__heart {
+  padding-top: 3%;
+  padding-right: 4%;
+}
+.restaurant__card__heart:hover .fa-heart-animated {
+  cursor: pointer;
+}
+.restaurant__card__grab {
+  background-color: #99E2D0;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  border-radius: 2px;
+  padding: 2%;
+  margin: 2%;
+  color: #008766;
+  font-weight: 600;
 }
 
 /*Layout Footer*/
 .footer {
-  background-color: #959595;
+  background-color: #7e7e7e;
 }/*# sourceMappingURL=style.css.map */
