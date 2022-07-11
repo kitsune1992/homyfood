@@ -12,8 +12,7 @@ span {
   font-family: "Roboto";
 }
 
-a,
-ul {
+a {
   text-decoration: none;
 }
 
@@ -25,10 +24,14 @@ ul {
   align-items: center;
   padding: 6%;
   padding-bottom: 10px;
+  /*pages de details*/
 }
 .header__logo {
   justify-content: center;
   border-style: none;
+}
+.header--menu {
+  display: flex;
 }
 
 /*Layout  location*/
@@ -173,9 +176,8 @@ ul {
 }
 .restaurant__card__img {
   width: 90vw;
-  height: 40vw;
+  height: 71%;
   object-fit: cover;
-  object-position: 50% 60%;
   border-radius: 20px 20px 0px 0px;
 }
 .restaurant__card__content {
@@ -186,15 +188,21 @@ ul {
   padding-left: 4%;
   padding-top: 2%;
 }
+.restaurant__card__link:link {
+  color: black;
+}
+.restaurant__card__text {
+  color: black;
+  line-height: 22px;
+}
 .restaurant__card__name {
   font-weight: bold;
 }
 .restaurant__card__heart {
   padding-top: 3%;
   padding-right: 4%;
-}
-.restaurant__card__heart:hover .fa-heart-animated {
-  cursor: pointer;
+  font-size: 20px;
+  padding-top: 0%;
 }
 .restaurant__card__grab {
   background-color: #99E2D0;
@@ -210,5 +218,33 @@ ul {
 
 /*Layout Footer*/
 .footer {
-  background-color: #7e7e7e;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  color: white;
+}
+.footer__title {
+  font-family: Shrikhand;
+  font-size: 20px;
+  color: white;
+  padding-left: 9%;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6%;
+}
+.footer__content__link {
+  color: white;
+  font-family: roboto;
+  font-size: 17px;
+  padding-left: 9%;
+  text-align: justify;
+  padding-bottom: 4%;
+}
+.footer__content .footer-icon {
+  padding-right: 2%;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

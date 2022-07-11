@@ -17,10 +17,10 @@ span {
     font-family: "Roboto";
 }
 
-a,
-ul {
-    text-decoration: none;
+a
 
+{
+    text-decoration: none;
 }
 
 
@@ -48,9 +48,14 @@ ul {
 
     }
 
-
+    /*pages de details*/
+&--menu{
+display: flex;
 
 }
+
+}
+
 
 
 /*Layout  location*/
@@ -74,7 +79,7 @@ ul {
     &__icon {
         display: inline-block;
         font-size: large;
-        color:#353535;
+        color: #353535;
         padding-left: 11%;
     }
 
@@ -138,8 +143,8 @@ ul {
 
     &__subtitle {
 
-        font-style:normal;
-        font-size:20px;
+        font-style: normal;
+        font-size: 20px;
         margin: 0% 0% 12% 0%;
     }
 
@@ -160,18 +165,18 @@ ul {
     width: 265px;
     height: 60px;
     box-shadow: 0px 6px 10px 0px $shadow-color ;
-  
-    margin: 0% 0%  0% 15% ;
-   
+
+    margin: 0% 0% 0% 15%;
+
 
     &__text {
         color: white;
         font-size: 20px;
         font-weight: 400;
         padding: 9%;
-     
-    
-}
+
+
+    }
 }
 
 /*section title*/
@@ -244,17 +249,16 @@ ul {
         box-shadow: 0px 1px 8px 1px $shadow-color;
         margin-bottom: 10%;
         margin-left: 7%;
-
         overflow: hidden;
         background-color: white;
         position: relative;
 
+    
 
         &__img {
             width: 90vw;
-            height: 40vw;
-            object-fit: cover;
-            object-position: 50% 60%;
+            height: 71%;
+          object-fit:cover;
             border-radius: 20px 20px 0px 0px;
 
         }
@@ -264,61 +268,98 @@ ul {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-    padding-left: 4%;
-    padding-top: 2%;
-        }
-
-         
-        &__name{
-        font-weight: bold;
-
-    }
-
-   
-
-
-         
-         &__heart{
-            padding-top: 3%;
-                padding-right: 4%;
-
-
-                &:hover .fa-heart-animated{
-                    cursor: pointer;
-                   
-                   
-                }       
-    }
-    
+            padding-left: 4%;
+            padding-top: 2%;
         
-    
-        
+       
+           
+    }
+    &__link:link{
+        color: black;
+    }
+        &__text{
           
-        
+        color: black;
+        line-height: 22px;
+        }
     
+    &__name{
+        font-weight: bold;
+    }
 
-        &__grab{
-         
-            background-color:$tertiary-color ;
-       position: absolute;
-       top: 10px;
-       right: 8px;
-       border-radius: 2px;
-       padding: 2%;
-       margin: 2%;
-       color:$deepsea-color ;
-       font-weight: 600;
+    &__place{}
+        
+
+        &__heart {
+            padding-top: 3%;
+            padding-right: 4%;
+        font-size: 20px;
+        padding-top: 0%;
+    }
             
+        
+        
+
+        &__grab {
+
+            background-color: $tertiary-color ;
+            position: absolute;
+            top: 10px;
+            right: 8px;
+            border-radius: 2px;
+            padding: 2%;
+            margin: 2%;
+            color: $deepsea-color ;
+            font-weight: 600;
+
         }
     }
-    }
-    
-
+}
 
 
 
 
 /*Layout Footer*/
 .footer {
-    background-color: $darkgray-color ;
+    background-color: $minegray-color ;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    color: white;
+
+
+
+
+    &__title{
+        font-family: Shrikhand;
+        font-size: 20px;
+        color: white;
+        padding-left: 9%;
+      
+
+
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 6%;
+    
+
+    
+    &__link{
+      
+        color: white;
+        font-family: roboto;
+        font-size: 17px;
+        padding-left: 9%;
+        text-align: justify;
+        padding-bottom:4% ;
+  
+    }
+    .footer-icon{
+        padding-right: 2%;
+        font-size: 14px;
+    }
+}
 }
