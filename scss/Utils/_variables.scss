@@ -1,10 +1,14 @@
-//colors
+
+//colors//
 $primary-color:#9356DC;
 $secondary-color:#FF79DA ;
 $tertiary-color:#99E2D0;
-$shadow-color:#c4c3c0;
-$lightgray-color:#eaeaea;
-$whitegray-color:#f6f6f6;
-$darkgray-color:#7e7e7e;
-$minegray-color:#353535;
 $deepsea-color:#008766;
+
+//background colors//
+$whitegray-color:#f6f6f6;
+$lightgray-color:#eaeaea;
+$minegray-color:#353535;
+$shadow-color:#c4c3c0;
+$darkgray-color:#7e7e7e;
+$linear-gradient: linear-gradient(175deg, $color-secondary, $color-primary);

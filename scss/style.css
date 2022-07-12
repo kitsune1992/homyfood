@@ -13,26 +13,34 @@ span {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 /*Reset*/
 /*layout header*/
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 6%;
   padding-bottom: 10px;
-  /*pages de details*/
+  position: relative;
 }
 .header__logo {
+  padding-left: 22%;
   justify-content: center;
   border-style: none;
 }
-.header--menu {
-  display: flex;
-}
+
 
 /*Layout  location*/
 .location {
@@ -81,7 +89,7 @@ a {
   padding-bottom: 20%;
 }
 .speech__title {
-  font-size: 29px;
+  font-size: 25px;
   font-weight: 700;
   padding: 5%;
   margin: 1% 0% 0% 3%;
@@ -93,23 +101,15 @@ a {
 }
 
 /*BTN*/
-.button {
-  display: flex;
-  align-items: center;
-  background-color: #9356DC;
-  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
-  border: 0;
-  border-radius: 30px;
-  width: 265px;
-  height: 60px;
-  box-shadow: 0px 6px 10px 0px #c4c3c0;
-  margin: 0% 0% 0% 15%;
-}
-.button__text {
+.btn {
+  display: inline-block;
+  border-radius: 35px;
+  margin: 0% 18% 0% 18%;
   color: white;
-  font-size: 20px;
   font-weight: 400;
-  padding: 9%;
+  padding:4%;
+  box-shadow: 0px 3px 12px 0px #c4c3c0;
+  background-image: linear-gradient(175deg, #FF79DA, #9356DC);
 }
 
 /*section title*/
@@ -129,6 +129,7 @@ a {
   margin-bottom: 10%;
 }
 .working__step__content {
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -136,9 +137,8 @@ a {
   margin-left: 10%;
   margin-right: 10%;
   padding: 5% 0% 5% 0%;
-  background-color: #f6f6f6;
   border-radius: 18px;
-  box-shadow: 1px 2px 11px 1px #c4c3c0;
+  box-shadow: 0px 3px 12px 0px #c4c3c0;
 }
 .working__step__num {
   display: flex;
@@ -161,21 +161,21 @@ a {
 .restaurant {
   background-color: #f6f6f6;
   padding: 1%;
+  /*button heart*/
 }
 .restaurant__card {
-  display: flex;
   width: 85%;
   height: 230px;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 0px 1px 8px 1px #c4c3c0;
   margin-bottom: 10%;
   margin-left: 7%;
   overflow: hidden;
   background-color: white;
   position: relative;
+  box-shadow: 0px 3px 12px 0px #c4c3c0;
 }
 .restaurant__card__img {
-  width: 90vw;
+  width: 100%;
   height: 71%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
@@ -198,12 +198,6 @@ a {
 .restaurant__card__name {
   font-weight: bold;
 }
-.restaurant__card__heart {
-  padding-top: 3%;
-  padding-right: 4%;
-  font-size: 20px;
-  padding-top: 0%;
-}
 .restaurant__card__grab {
   background-color: #99E2D0;
   position: absolute;
@@ -214,6 +208,14 @@ a {
   margin: 2%;
   color: #008766;
   font-weight: 600;
+}
+.restaurant .btn-heart {
+  padding-top: 3%;
+  padding-right: 4%;
+  font-size: 20px;
+  padding-top: 0%;
+  border: none;
+  background-color: white;
 }
 
 /*Layout Footer*/
