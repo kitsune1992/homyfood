@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/scss/style.css">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
@@ -18,13 +18,14 @@
 <body>
 
     <header class="header">
-        <nav class="header__nav">
+        <nav class="back">
             <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         </nav>
 
-        <h1 class="header-menu__title">
+        <h1 class="header__title">
             <a href="#">ohmyfood</a>
         </h1>
+
     </header>
 
     <main>
@@ -34,7 +35,7 @@
 
             <div class="menu__content">
                 <div class=" menu__heading">
-                    <h2 class="menu__title"> </h2>
+                    <h2 class="menu__title">La palette du gout </h2>
                 </div>
                 <buttons class="btn-heart btn--mn">
                     <i class="far fa-heart" aria-hidden="true"></i>
@@ -47,11 +48,11 @@
                 <article class="plat__card">
                     <a href="#" class="plat plat--1">
                         <div class="plat__info">
-                            <h3 class="plat__title">
-                                </h>
-                                <p class="plat__composition"></p>
+                            <h3 class="plat__title">Fricassée d'escargot
+                                </h3>
+                                <p class="plat__composition">Au piment d'espelette</p>
                         </div>
-                        <span class="plat__price">€</span>
+                        <span class="plat__price">25€</span>
                         <div class="plat__check">
                             <i class="fas fa-check-circle"></i>
                         </div>
@@ -61,11 +62,11 @@
 
                 <a href="#" class="plat plat--2">
                     <div class="plat__info">
-                        <h3 class="plat__title">
-                            </h>
-                            <p class="plat__composition"></p>
+                        <h3 class="plat__title"> Foie gras de canard mi-cuit
+                            </h3>
+                            <p class="plat__composition">Et ses copeaux de truffe noire</p>
                     </div>
-                    <span class="plat__price">€</span>
+                    <span class="plat__price">35€</span>
                     <div class="plat__check">
                         <i class="fas fa-check-circle"></i>
                     </div>
@@ -74,11 +75,11 @@
                 </article>
                 <a href="#" class="plat plat--3">
                     <div class="plat__info">
-                        <h3 class="plat__title">
-                            </h>
-                            <p class="plat__composition"></p>
+                        <h3 class="plat__title">Oeuf au plat
+                            </h3>
+                            <p class="plat__composition">Assaisoné à la truffe sur son lit de caviar</p>
                     </div>
-                    <span class="plat__price">€</span>
+                    <span class="plat__price">20€</span>
                     <div class="plat__check">
                         <i class="fas fa-check-circle"></i>
                     </div>
@@ -91,11 +92,11 @@
                     <article class="plat__card">
                         <a href="#" class="plat plat--4">
                             <div class="plat__info">
-                                <h3 class="plat__title">
-                                    </h>
-                                    <p class="plat__composition"></p>
+                                <h3 class="plat__title">Filet de boeuf aux herbes
+                                    </h3>
+                                    <p class="plat__composition">Accompagné de sa ribambelle de légume</p>
                             </div>
-                            <span class="plat__price">€</span>
+                            <span class="plat__price">40€</span>
                             <div class="plat__check">
                                 <i class="fas fa-check-circle"></i>
                             </div>
@@ -105,11 +106,11 @@
 
                     <a href="#" class="plat plat--5">
                         <div class="plat__info">
-                            <h3 class="plat__title">
-                                </h>
-                                <p class="plat__composition"></p>
+                            <h3 class="plat__title">Parmentier de queue de boeuf
+                                </h3>
+                                <p class="plat__composition">À la truffe noire sur sa purée de panais</p>
                         </div>
-                        <span class="plat__price">€</span>
+                        <span class="plat__price">35€</span>
                         <div class="plat__check">
                             <i class="fas fa-check-circle"></i>
                         </div>
@@ -118,11 +119,11 @@
                     </article>
                     <a href="#" class="plat plat--6">
                         <div class="plat__info">
-                            <h3 class="plat__title">
-                                </h>
-                                <p class="plat__composition"></p>
+                            <h3 class="plat__title">Filet de Turbot
+                                </h3>
+                                <p class="plat__composition">Aux agrumes</p>
                         </div>
-                        <span class="plat__price">€</span>
+                        <span class="plat__price">44€</span>
                         <div class="plat__check">
                             <i class="fas fa-check-circle"></i>
                         </div>
@@ -134,11 +135,11 @@
                         <article class="plat__card">
                             <a href="#" class="plat plat--7">
                                 <div class="plat__info">
-                                    <h3 class="plat__title">
-                                        </h>
-                                        <p class="plat__composition"></p>
+                                    <h3 class="plat__title">Paris-Brest
+                                        </h3>
+                                        <p class="plat__composition">Revisité</p>
                                 </div>
-                                <span class="plat__price">€</span>
+                                <span class="plat__price">18€</span>
                                 <div class="plat__check">
                                     <i class="fas fa-check-circle"></i>
                                 </div>
@@ -148,11 +149,11 @@
 
                         <a href="#" class="plat plat--8">
                             <div class="plat__info">
-                                <h3 class="plat__title">
-                                    </h>
-                                    <p class="plat__composition"></p>
+                                <h3 class="plat__title">Macaron au chocolat d'exception
+                                    </h3>
+                                    <p class="plat__composition">Et glace à la vanille de Madagascar</p>
                             </div>
-                            <span class="plat__price">€</span>
+                            <span class="plat__price">22€</span>
                             <div class="plat__check">
                                 <i class="fas fa-check-circle"></i>
                             </div>
@@ -161,11 +162,11 @@
                         </article>
                         <a href="#" class="plat plat--9">
                             <div class="plat__info">
-                                <h3 class="plat__title">
-                                    </h>
-                                    <p class="plat__composition"></p>
+                                <h3 class="plat__title"> Mousse au chocolat
+                                    </h3>
+                                    <p class="plat__composition">Au piment d'espelette et à la truffe noire</p>
                             </div>
-                            <span class="plat__price">€</span>
+                            <span class="plat__price">23€</span>
                             <div class="plat__check">
                                 <i class="fas fa-check-circle"></i>
                             </div>
@@ -180,8 +181,8 @@
 
 
     </main>
-     <!--Footer-->
-     <footer class=" footer">
+    <!--Footer-->
+    <footer class=" footer">
         <!--titre-->
         <h1 class="footer__title">ohmyfood</h1>
 
