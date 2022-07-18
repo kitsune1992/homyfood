@@ -1,1 +1,45 @@
+/*Layout Footer*/
+.footer {
+    background-color: $minegray-color ;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    color: white;
 
+
+
+
+    &__title {
+        font-family: "shrikhand", cursive;
+        font-size: 30px;
+        color: white;
+        padding-left: 9%;
+
+
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 6%;
+    }
+
+    &__link {
+
+        color: white;
+        font-family: 'roboto';
+        font-size: 17px;
+        padding-left: 9%;
+        text-align: justify;
+        padding-bottom: 4%;
+
+    }
+
+    .footer-icon {
+        padding-right: 2%;
+        font-size: 14px;
+    }
+
+}

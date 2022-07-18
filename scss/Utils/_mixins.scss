@@ -2,28 +2,9 @@
     box-shadow: 0px 3px 12px 0px $shadow-color;
     
 }
-@mixin linear-gradient($degree, $color1, $color2) {
-    background: linear-gradient($degree, $color1 0%, $color2 100%);
+@mixin linear-gradient {
+    background: linear-gradient(175deg, $secondary-color, $primary-color);
 }
 
-@mixin mini-card {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 5% 0% 5% 0%;
-    border-radius: 18px;
-    
-}
-@mixin btn-heart {
-    
-    font-size: 20px;
-    padding-top: 0%;
-    border: none;
-    background-color: white;
 
 
-    
-}

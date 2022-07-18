@@ -1,10 +1,5 @@
 /*bases*/
-@font-face {
-  font-family: "Roboto";
-  src: url("Polices/Roboto/Roboto-Regular-webfont.ttf");
-}
-h1,
-h2,
+h1 h2,
 h3,
 p,
 a,
@@ -23,10 +18,112 @@ button {
   cursor: pointer;
   border: none;
   background: none;
-  padding: 0;
+  padding: 0%;
 }
 
-/*Reset*/
+/*section title*/
+.section__title {
+  margin-bottom: 7%;
+  margin-top: 10%;
+  padding-left: 8%;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.underline-title {
+  font-family: "roboto";
+  text-transform: uppercase;
+  padding-left: 5%;
+  padding-top: 8%;
+}
+
+/*BTN*/
+.btn {
+  display: inline-block;
+  margin: 0% 18% 0% 18%;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  padding: 4%;
+  border-radius: 35px;
+  box-shadow: 0px 3px 12px 0px #c4c3c0;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+}
+
+/*button heart*/
+.btn-heart {
+  padding-top: 3%;
+  padding-right: 4%;
+  font-size: 20px;
+  padding-top: 0%;
+  border: none;
+}
+
+.card {
+  width: 85%;
+  height: 230px;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 10%;
+  margin-left: 7%;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 3px 12px 0px #c4c3c0;
+}
+.card__img {
+  width: 100%;
+  height: 71%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.card__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+.card__link:link {
+  color: black;
+}
+.card__text {
+  color: black;
+  line-height: 22px;
+}
+.card__name {
+  font-weight: bold;
+}
+.card__grab {
+  background-color: #99E2D0;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  border-radius: 2px;
+  padding: 2%;
+  margin: 2%;
+  color: #008766;
+  font-weight: 600;
+}
+
+.plat {
+  background-color: white;
+  display: flex;
+  align-items: baseline;
+  margin: 6% 4% 4% 3%;
+  padding: 5% 0% 5% 0%;
+  border-radius: 18px;
+  box-shadow: 0px 3px 12px 0px #c4c3c0;
+}
+.plat__info {
+  padding-left: 0%;
+}
+.plat__title {
+  font-weight: bold;
+}
+
 /*layout header*/
 .header {
   display: flex;
@@ -40,7 +137,42 @@ button {
   justify-content: center;
   border-style: none;
 }
+.header__title {
+  font-family: "shrikhand", cursive;
+}
 
+/*Layout Footer*/
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  color: white;
+}
+.footer__title {
+  font-family: "shrikhand", cursive;
+  font-size: 30px;
+  color: white;
+  padding-left: 9%;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6%;
+}
+.footer__link {
+  color: white;
+  font-family: "roboto";
+  font-size: 17px;
+  padding-left: 9%;
+  text-align: justify;
+  padding-bottom: 4%;
+}
+.footer .footer-icon {
+  padding-right: 2%;
+  font-size: 14px;
+}
 
 /*Layout  location*/
 .location {
@@ -91,7 +223,7 @@ button {
 .speech__title {
   font-size: 25px;
   font-weight: 700;
-  padding: 5%;
+  padding: 4%;
   margin: 1% 0% 0% 3%;
 }
 .speech__subtitle {
@@ -100,29 +232,6 @@ button {
   margin: 0% 0% 12% 0%;
 }
 
-/*BTN*/
-.btn {
-  display: inline-block;
-  border-radius: 35px;
-  margin: 0% 18% 0% 18%;
-  color: white;
-  font-weight: 400;
-  padding:4%;
-  box-shadow: 0px 3px 12px 0px #c4c3c0;
-  background-image: linear-gradient(175deg, #FF79DA, #9356DC);
-}
-
-/*section title*/
-.section__title {
-  margin-bottom: 7%;
-  margin-top: 10%;
-  padding-left: 8%;
-  font-size: 23px;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-/*layout section working*/
 .working {
   display: flex;
   flex-direction: column;
@@ -161,7 +270,6 @@ button {
 .restaurant {
   background-color: #f6f6f6;
   padding: 1%;
-  /*button heart*/
 }
 .restaurant__card {
   width: 85%;
@@ -209,44 +317,35 @@ button {
   color: #008766;
   font-weight: 600;
 }
-.restaurant .btn-heart {
-  padding-top: 3%;
-  padding-right: 4%;
-  font-size: 20px;
-  padding-top: 0%;
-  border: none;
-  background-color: white;
-}
 
-/*Layout Footer*/
-.footer {
-  background-color: #353535;
+/*details*/
+.menu {
+  padding: 0;
+  background-color: #f6f6f6;
+}
+.menu__picture {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+.menu__content {
   display: flex;
-  flex-direction: column;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  color: white;
+  flex-direction: row;
 }
-.footer__title {
-  font-family: Shrikhand;
-  font-size: 20px;
-  color: white;
-  padding-left: 9%;
+.menu__heading {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0% 10% 0% 6%;
 }
-.footer__content {
-  display: flex;
-  flex-direction: column;
-  padding-top: 6%;
+.menu__title {
+  font-family: "shrikhand", cursive;
+  font-size: 25px;
 }
-.footer__content__link {
-  color: white;
-  font-family: roboto;
-  font-size: 17px;
-  padding-left: 9%;
-  text-align: justify;
-  padding-bottom: 4%;
+.menu__plat {
+  margin-bottom: 0%;
 }
-.footer__content .footer-icon {
-  padding-right: 2%;
-  font-size: 14px;
+.menu__order {
+  text-align: center;
+  margin-bottom: 0%;
 }/*# sourceMappingURL=style.css.map */

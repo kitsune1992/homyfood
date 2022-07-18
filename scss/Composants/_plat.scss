@@ -1,0 +1,18 @@
+.plat{
+background-color: white;
+display: flex;
+align-items: baseline;
+margin: 6% 4% 4% 3%;
+padding: 5% 0% 5% 0%;
+border-radius: 18px;
+@include border-shadow;
+
+&__info{
+    padding-left: 0%;
+}
+
+&__title{
+    font-weight:bold;
+  
+}
+}

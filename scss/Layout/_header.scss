@@ -1,0 +1,22 @@
+/*layout header*/
+.header {
+    display: flex;
+    align-items: center;
+    padding: 6%;
+    padding-bottom: 10px;
+    position: relative;
+
+
+    &__logo {
+        padding-left: 22%;
+        justify-content: center;
+        border-style: none;
+    }
+
+    &__title{ font-family: "shrikhand", cursive;
+    }
+       
+    }
+
+
+
