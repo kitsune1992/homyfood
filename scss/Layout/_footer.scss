@@ -12,9 +12,9 @@
 
     &__title {
         font-family: "shrikhand", cursive;
-        font-size: 30px;
+        font-size: 16px;
         color: white;
-        padding-left: 9%;
+        padding-left: 7%;
 
 
 
@@ -24,16 +24,19 @@
         display: flex;
         flex-direction: column;
         padding-top: 6%;
+        padding-left:6%; 
+        line-height:26px;
     }
 
     &__link {
 
         color: white;
         font-family: 'roboto';
-        font-size: 17px;
+        font-size: 15px;
         padding-left: 9%;
         text-align: justify;
         padding-bottom: 4%;
+     
 
     }
 

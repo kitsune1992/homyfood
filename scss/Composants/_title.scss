@@ -10,10 +10,28 @@
 }
 
 .underline-title{
-    font-family:"roboto";
     text-transform: uppercase;
+    font-family: "roboto";
     padding-left: 5%;
-    padding-top:8%;
-    
+    padding-top:5%;
 
+
+    &:after{
+    background: $tertiary-color;
+    width: 32px;
+    height:3px ;
+    display: block;
+    content: "";
+    position: relative;
+    bottom: -3px;
+    
+   
+
+    }
+    
+}
+.header-title{
+
+        font-family: "shrikhand", cursive;
+        font-size:  20px; ;
 }

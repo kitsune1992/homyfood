@@ -2,29 +2,34 @@
 .menu {
     
     padding: 0;
-    background-color: $whitegray-color;
-
+  
 
     &__picture {
         width: 100%;
         height: 300px;
         object-fit: cover;
         position: relative;
-
+        z-index: 1;
+        background-color: white;
     }
 
     &__content {
+        background-color: $whitegray-color;
         display: flex;
         flex-direction: row;
-        
+        align-items:baseline;
+        justify-content: space-around;
+        z-index: 2;
+        border-radius: 40px 40px 0px 0px;
+        margin-top: -16%;
+        position: relative;
+        padding: 0%;
     }
 
 
     &__heading {
 
-        margin-top: 0%;
-        margin-bottom: 0%;
-        padding: 0% 10% 0% 6%;
+        padding: 10% 10% 0% 0%;
 
     }
 
@@ -32,6 +37,7 @@
     &__title {
         font-family: "shrikhand",cursive;
         font-size: 25px;
+       
 
 
     }
@@ -42,7 +48,9 @@
 
     &__plat {
         margin-bottom: 0%;
-
+        background-color: $whitegray-color;
+    
+        
 
     }
 
@@ -51,4 +59,5 @@
         margin-bottom: 0%;
 
     }
+    
 }
