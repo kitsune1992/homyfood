@@ -1,13 +1,5 @@
 /*section title*/
-.section__title {
-    margin-bottom: 7%;
-    margin-top: 10%;
-    padding-left: 8%;
-    font-size: 23px;
-    font-weight: 700;
-    text-transform: capitalize;
 
-}
 
 .underline-title{
     text-transform: uppercase;
@@ -33,5 +25,12 @@
 .header-title{
 
         font-family: "shrikhand", cursive;
-        font-size:  20px; ;
+        font-size:$font-size-med;
 }
+.section__title{
+        margin-bottom: 7%;
+        margin-top: 10%;
+        padding-left: 8%;
+      @include font-size-title;
+    }
+

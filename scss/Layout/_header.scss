@@ -1,16 +1,18 @@
 /*layout header*/
 .header {
-    display: flex;
-    align-items: center;
-    padding-top: 6px;
+  
+    padding-top: 16px;
     padding-bottom: 6px;
     position: relative;
+    @include flex(row, center,normal,nowrap);
 
 
     &__logo {
+
         padding-left: 22%;
         justify-content: center;
         border-style: none;
+       
     }
 
     &__back{
